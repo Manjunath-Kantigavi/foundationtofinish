@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Home Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Dream Home</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your Dream Home</h1>
+            <p>Discover the perfect property that matches your lifestyle</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Enter location...">
+                <select>
+                    <option value="">Property Type</option>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="villa">Villa</option>
+                </select>
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="featured-properties">
+        <h2>Featured Properties</h2>
+        <div class="property-grid">
+            <!-- Featured Properties Section -->
+            <div class="property-card">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=300&h=200&fit=crop" alt="Modern Villa">
+                <div class="property-info">
+                    <h3>Modern Villa</h3>
+                    <p class="price">$850,000</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Beverly Hills, CA</p>
+                    <div class="details">
+                        <span><i class="fas fa-bed"></i> 4 Beds</span>
+                        <span><i class="fas fa-bath"></i> 3 Baths</span>
+                        <span><i class="fas fa-ruler-combined"></i> 2,500 sqft</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more property cards here -->
+        </div>
+    </section>
+
+    <!-- Construction Products Section -->
+    <section id="products" class="construction-products">
+        <h2>Construction Products</h2>
+        <div class="product-grid">
+            <!-- Construction Products Section -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=300&h=200&fit=crop" alt="Premium Cement">
+                <div class="product-info">
+                    <h3>Premium Portland Cement</h3>
+                    <p class="product-price">$25.99</p>
+                    <p class="product-description">High-quality cement for superior strength and durability. Perfect for all construction needs.</p>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=300&h=200&fit=crop" alt="Steel Bars">
+                <div class="product-info">
+                    <h3>Construction Steel Bars</h3>
+                    <p class="product-price">$45.99</p>
+                    <p class="product-description">High-tensile strength steel bars for reinforced concrete structures.</p>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1590086782957-93c06ef21604?w=300&h=200&fit=crop" alt="Bricks">
+                <div class="product-info">
+                    <h3>Premium Clay Bricks</h3>
+                    <p class="product-price">$0.99/piece</p>
+                    <p class="product-description">Classic red clay bricks, perfect for both structural and decorative purposes.</p>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vendors Section -->
+    <section id="vendors" class="vendors-section">
+        <h2>Our Trusted Vendors</h2>
+        
+        <div class="vendor-filters">
+            <input type="text" placeholder="Search vendors..." class="vendor-search">
+            <select class="vendor-category">
+                <option value="">All Categories</option>
+                <option value="cement">Cement Suppliers</option>
+                <option value="electrical">Electrical</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="construction">Construction</option>
+            </select>
+        </div>
+
+        <div class="vendors-grid">
+            <div class="vendor-card featured">
+                <div class="featured-badge">Featured</div>
+                <img src="https://via.placeholder.com/150" alt="SuperBuild Construction" class="vendor-logo">
+                <div class="vendor-info">
+                    <h3>SuperBuild Construction</h3>
+                    <p class="category">Construction Materials</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.5/5)</span>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> contact@superbuild.com</p>
+                        <p><i class="fas fa-globe"></i> www.superbuild.com</p>
+                    </div>
+                    <button class="contact-vendor">Contact Vendor</button>
+                </div>
+            </div>
+
+            <div class="vendor-card">
+                <img src="https://via.placeholder.com/150" alt="ElectroPro Services" class="vendor-logo">
+                <div class="vendor-info">
+                    <h3>ElectroPro Services</h3>
+                    <p class="category">Electrical</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(4.0/5)</span>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (555) 234-5678</p>
+                        <p><i class="fas fa-envelope"></i> info@electropro.com</p>
+                        <p><i class="fas fa-globe"></i> www.electropro.com</p>
+                    </div>
+                    <button class="contact-vendor">Contact Vendor</button>
+                </div>
+            </div>
+
+            <div class="vendor-card">
+                <img src="https://via.placeholder.com/150" alt="PlumbMaster" class="vendor-logo">
+                <div class="vendor-info">
+                    <h3>PlumbMaster</h3>
+                    <p class="category">Plumbing</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5.0/5)</span>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (555) 345-6789</p>
+                        <p><i class="fas fa-envelope"></i> service@plumbmaster.com</p>
+                        <p><i class="fas fa-globe"></i> www.plumbmaster.com</p>
+                    </div>
+                    <button class="contact-vendor">Contact Vendor</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workers Section -->
+    <section id="workers" class="workers-section">
+        <div class="parallax-header">
+            <h2>Our Expert Team</h2>
+            <p>Building Your Dreams with Excellence</p>
+        </div>
+        <div class="workers-container">
+            <!-- Individual worker showcases will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Land Development Sites Section -->
+    <section id="development-sites" class="development-sites">
+        <h2>Land Development Opportunities</h2>
+        <div class="sites-grid">
+            <div class="development-card" data-site-id="1">
+                <img src="https://via.placeholder.com/800x500" alt="Riverside Development">
+                <div class="site-overlay">
+                    <h3>Riverside Development</h3>
+                    <div class="site-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Riverside County, CA</p>
+                        <p><i class="fas fa-ruler-combined"></i> 25 acres</p>
+                        <p><i class="fas fa-building"></i> Mixed-use Development</p>
+                    </div>
+                    <button class="view-details">View Details</button>
+                </div>
+            </div>
+
+            <div class="development-card" data-site-id="2">
+                <img src="https://via.placeholder.com/800x500" alt="Highland Valley Project">
+                <div class="site-overlay">
+                    <h3>Highland Valley Project</h3>
+                    <div class="site-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Highland Valley, CA</p>
+                        <p><i class="fas fa-ruler-combined"></i> 40 acres</p>
+                        <p><i class="fas fa-home"></i> Residential Development</p>
+                    </div>
+                    <button class="view-details">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Details Modal -->
+    <div id="siteModal" class="modal">
+        <div class="modal-content">
+            <!-- Content will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Dream Home</h3>
+                <p>Your trusted partner in real estate</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dream Home Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
